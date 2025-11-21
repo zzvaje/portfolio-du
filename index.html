@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Urrea | Linux System Administrator</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23121212'></rect><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-size='50' font-family='sans-serif' fill='%23c5a57e'>DU</text></svg>">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar-custom">
+        <a href="#" class="nav-link d-none-mobile">DU</a>
+        <a href="#experience" class="nav-link d-none-mobile" data-en="Experience" data-es="Experiencia">Experience</a>
+        <a href="#skills" class="nav-link d-none-mobile" data-en="Skills" data-es="Habilidades">Skills</a>
+        <a href="#certs" class="nav-link d-none-mobile" data-en="Certifications"
+            data-es="Certificaciones">Certifications</a>
+        <a href="#education" class="nav-link d-none-mobile" data-en="Education" data-es="Educación">Education</a>
+        <!-- <a href="#contact" class="nav-link d-none-mobile" data-en="Contact" data-es="Contacto">Contact</a> -->
+        <div class="nav-controls d-flex justify-content-between align-items-center w-100">
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" id="menuBtn">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="d-flex gap-2">
+                <button onclick="toggleTheme()" id="themeBtn">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button onclick="toggleLang()" id="langBtn">ES</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#" class="mobile-link" onclick="closeMobileMenu()">DU</a>
+        <a href="#experience" class="mobile-link" data-en="Experience" data-es="Experiencia"
+            onclick="closeMobileMenu()">Experience</a>
+        <a href="#skills" class="mobile-link" data-en="Skills" data-es="Habilidades"
+            onclick="closeMobileMenu()">Skills</a>
+        <a href="#certs" class="mobile-link" data-en="Certifications" data-es="Certificaciones"
+            onclick="closeMobileMenu()">Certifications</a>
+        <a href="#education" class="mobile-link" data-en="Education" data-es="Educación"
+            onclick="closeMobileMenu()">Education</a>
+        <!-- <a href="#contact" class="mobile-link" data-en="Contact" data-es="Contacto"
+            onclick="closeMobileMenu()">Contact</a> -->
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <!-- <div class="hero-label anim"><span class="dot"></span><span data-en="Available for opportunities"
+                    data-es="Disponible para oportunidades">Available for opportunities</span></div> -->
+            <h1 class="anim">David <span class="accent">Urrea</span></h1>
+            <p class="hero-subtitle anim" data-en="Linux System Administrator & Application Support Engineer"
+                data-es="Administrador de Sistemas Linux e Ingeniero de Soporte">Linux System Administrator &
+                Application Support Engineer</p>
+            <p class="hero-text anim"
+                data-en="Dedicated System Administrator specializing in Unix systems and enterprise middleware. Building robust server environments and automating processes for secure, high-availability operations."
+                data-es="Administrador de Sistemas dedicado en Unix y middleware empresarial. Construyendo entornos robustos y automatizando procesos para operaciones seguras de alta disponibilidad.">
+                Dedicated System Administrator specializing in Unix systems and enterprise middleware. Building robust
+                server environments and automating processes for secure, high-availability operations.</p>
+            <div class="hero-btns anim">
+                <a href="#contact" class="btn-primary-custom" data-en="Get in Touch" data-es="Contáctame">Get in
+                    Touch</a>
+                <a href="https://www.linkedin.com/in/david-a-urrea" target="_blank" class="btn-secondary-custom"><i
+                        class="bi bi-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <p class="section-label anim" data-en="Experience" data-es="Experiencia">Experience</p>
+            <h2 class="section-title anim" data-en="Professional Experience" data-es="Experiencias Profesionales">
+                Professional Experience
+            </h2>
+            <div class="bento-grid">
+                <div class="bento-item span-8 anim">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                        <div>
+                            <h4 data-en="Application Support Engineer – Unix" data-es="Ingeniero de Soporte – Unix">
+                                Application Support Engineer – Unix</h4>
+                            <p class="mb-0" style="color:var(--accent)">AFIRME FINANCIAL GROUP</p>
+                        </div>
+                        <span style="color:var(--text3);font-size:.85rem">2024 – <span data-en="Present"
+                                data-es="Presente">Present</span></span>
+                    </div>
+                    <p data-en="Managing the complete lifecycle for over 60 critical financial applications, ensuring high availability and security across enterprise middleware platforms."
+                        data-es="Gestionando el ciclo de vida de más de 60 aplicaciones financieras críticas, asegurando alta disponibilidad y seguridad en plataformas middleware.">
+                        Managing the complete lifecycle for over 60 critical financial applications, ensuring high
+                        availability and security across enterprise middleware platforms.</p>
+                </div>
+                <div class="bento-item span-4 anim">
+                    <div class="bento-icon"><i class="bi bi-layers"></i></div>
+                    <h4 data-en="60+ Apps" data-es="60+ Apps">60+ Apps</h4>
+                    <p data-en="Critical financial applications managed"
+                        data-es="Aplicaciones financieras críticas gestionadas">Critical financial applications managed
+                    </p>
+                </div>
+                <div class="bento-item span-4 anim">
+                    <div class="bento-icon"><i class="bi bi-diagram-3"></i></div>
+                    <h4 data-en="Load Balancing" data-es="Balanceo de Carga">Load Balancing</h4>
+                    <p data-en="F5 BIG-IP and Apache-Proxy for uptime"
+                        data-es="F5 BIG-IP y Apache-Proxy para disponibilidad">F5 BIG-IP and Apache-Proxy for uptime</p>
+                </div>
+                <div class="bento-item span-4 anim">
+                    <div class="bento-icon"><i class="bi bi-shield-lock"></i></div>
+                    <h4 data-en="Security Gateway" data-es="Gateway Seguridad">Security Gateway</h4>
+                    <p data-en="IBM Datapower & API Connect support" data-es="Soporte IBM Datapower y API Connect">IBM
+                        Datapower & API Connect support</p>
+                </div>
+                <div class="bento-item span-4 anim">
+                    <div class="bento-icon"><i class="bi bi-activity"></i></div>
+                    <h4 data-en="Monitoring" data-es="Monitoreo">Monitoring</h4>
+                    <p data-en="Dynatrace & Applications Manager" data-es="Dynatrace y Applications Manager">Dynatrace &
+                        Applications Manager</p>
+                </div>
+            </div>
+            <div class="featured-card mt-4 anim">
+                <div class="featured-badge"><i class="bi bi-bank"></i> <span data-en="Key Achievement"
+                        data-es="Logro Clave">Key Achievement</span></div>
+                <h3 data-en="Core Payment System Operations" data-es="Operaciones de Sistemas de Pago Centrales">Core
+                    Payment System Operations</h3>
+                <p data-en="Entrusted with supporting Mexico's core payment systems (SPEI, SPID, & CoDi), ensuring security and stability of high-volume national interbank transactions."
+                    data-es="Encargado de apoyar los sistemas de pago centrales de México (SPEI, SPID y CoDi), asegurando seguridad y estabilidad de transacciones interbancarias de alto volumen.">
+                    Entrusted with supporting Mexico's core payment systems (SPEI, SPID, & CoDi), ensuring security and
+                    stability of high-volume national interbank transactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <p class="section-label anim" data-en="Skills" data-es="Habilidades">Skills</p>
+            <h2 class="section-title anim" data-en="Technical Expertise" data-es="Experiencia Técnica">Technical
+                Expertise</h2>
+            <div class="row g-4 mb-5">
+                <div class="col-6 col-lg-3 anim">
+                    <div class="skill-card"><i class="bi bi-terminal"></i>
+                        <h5 data-en="Operating Systems" data-es="Sistemas Operativos">Operating Systems</h5>
+                        <p>RHEL, AIX</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim">
+                    <div class="skill-card"><i class="bi bi-gear"></i>
+                        <h5>Middleware</h5>
+                        <p>WebSphere, MQ, Tomcat</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim">
+                    <div class="skill-card"><i class="bi bi-hdd-network"></i>
+                        <h5 data-en="Networking" data-es="Redes">Networking</h5>
+                        <p>F5, Datapower, SSL</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 anim">
+                    <div class="skill-card"><i class="bi bi-robot"></i>
+                        <h5 data-en="Automation" data-es="Automatización">Automation</h5>
+                        <p>Ansible, Bash, Control-M</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 anim">
+                    <h5 style="color:var(--accent);margin-bottom:1rem">Middleware Stack</h5>
+                    <ul class="skill-list">
+                        <li>IBM WebSphere Application Server</li>
+                        <li>IBM WebSphere MQ</li>
+                        <li>IBM API Connect</li>
+                        <li>IBM Integration BUS</li>
+                        <li>Apache Web Server & Proxy</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 anim">
+                    <h5 style="color:var(--accent);margin-bottom:1rem" data-en="Security & Network"
+                        data-es="Seguridad y Red">Security & Network</h5>
+                    <ul class="skill-list">
+                        <li>F5 BIG-IP Load Balancing</li>
+                        <li>IBM Datapower Gateway</li>
+                        <li>SSL Certificate Management</li>
+                        <li>API Security</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 anim">
+                    <h5 style="color:var(--accent);margin-bottom:1rem" data-en="Core Competencies"
+                        data-es="Competencias Clave">Core Competencies</h5>
+                    <ul class="skill-list">
+                        <li data-en="Incident Management" data-es="Gestión de Incidentes">Incident Management</li>
+                        <li data-en="Advanced Troubleshooting" data-es="Resolución Avanzada">Advanced Troubleshooting
+                        </li>
+                        <li data-en="System Automation" data-es="Automatización">System Automation</li>
+                        <li data-en="High Availability" data-es="Alta Disponibilidad">High Availability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certs">
+        <div class="container">
+            <p class="section-label anim" data-en="Certifications" data-es="Certificaciones">Certifications</p>
+            <h2 class="section-title anim" data-en="Credentials & Training" data-es="Credenciales y Capacitación">
+                Credentials & Training</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="cert-card anim">
+                        <div class="icon"><i class="bi bi-patch-check-fill"></i></div>
+                        <div>
+                            <h5><a href="https://www.educacioncontinua-abm.com.mx/sistema_lms/externo/insignia/341623F45B5893E53A2392641E3C2294-2674008"
+                                    target="_blank">Curso Ciberseguridad Básico 4.0</a></h5><span>Asociación de Bancos
+                                de México</span>
+                        </div>
+                    </div>
+                    <div class="cert-card anim">
+                        <div class="icon"><i class="bi bi-patch-check-fill"></i></div>
+                        <div>
+                            <h5><a href="https://www.credly.com/badges/6226c8db-6888-473f-aed6-655b0c48c326"
+                                    target="_blank">Linux Commands & Shell Scripting</a></h5><span>IBM / Credly</span>
+                        </div>
+                    </div>
+                    <div class="cert-card anim">
+                        <div class="icon"><i class="bi bi-patch-check-fill"></i></div>
+                        <div>
+                            <h5><a href="https://www.coursera.org/account/accomplishments/verify/V45EQX5APYNS"
+                                    target="_blank">Fundamentals of Red Hat Enterprise Linux</a></h5><span>Red Hat /
+                                Coursera</span>
+                        </div>
+                    </div>
+                    <div class="cert-card anim">
+                        <div class="icon"><i class="bi bi-patch-check-fill"></i></div>
+                        <div>
+                            <h5><a href="https://www.coursera.org/account/accomplishments/verify/U4OYF3PGUERX"
+                                    target="_blank">Business Analytics with Excel</a></h5><span>Johns Hopkins /
+                                Coursera</span>
+                        </div>
+                    </div>
+                    <div class="cert-card anim">
+                        <div class="icon"><i class="bi bi-mortarboard-fill"></i></div>
+                        <div>
+                            <h5>Red Hat System Administration I (RH124) </h5><span>Red Hat Training and
+                                Certification</span>
+                        </div>
+                    </div>
+                    <div class="cert-card anim">
+                        <div class="icon"><i class="bi bi-mortarboard-fill"></i></div>
+                        <div>
+                            <h5>Red Hat System Administration II (RH134)</h5><span>Red Hat Training and
+                                Certification</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" style="background:var(--bg2)">
+        <div class="container">
+            <p class="section-label" data-en="Education" data-es="Educación">Education</p>
+            <h2 class="section-title" data-en="Academic Background" data-es="Formación Académica">Academic
+                Background</h2>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6 anim">
+                    <div class="edu-card">
+                        <div class="icon-lg"><i class="bi bi-mortarboard-fill"></i></div>
+                        <h4 data-en="Bachelor of Computer Science" data-es="Licenciatura en Ciencias de la Computación">
+                            Bachelor of Computer Science</h4>
+                        <p class="subtitle">Universidad Autónoma de Nuevo León</p>
+                        <p style="color:var(--text3);margin:0">Monterrey, México</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 anim">
+
+                    <div class="edu-card">
+                        <div class="icon-lg"><i class="bi bi-award-fill"></i></div>
+                        <h4 data-en="Government Certified" data-es="Certificado por el Gobierno">Government Certified
+                        </h4>
+                        <p class="subtitle" data-en="Secretary of Public Education (SEP)"
+                            data-es="Secretaría de Educación Pública (SEP)">Secretary of Public Education (SEP)</p>
+                        <div class="verify-info">
+                            <p><strong>David Alejandro Urrea Miranda</strong></p>
+                            <p><span data-en="License" data-es="Cédula">License</span> #14600993</p>
+                        </div><a href="https://www.cedulaprofesional.sep.gob.mx/cedula/presidencia/indexAvanzada.action"
+                            target="_blank" class="btn-primary-custom" style="font-size:.85rem;padding:.65rem 1.25rem"
+                            data-en="Verify License" data-es="Verificar Cédula">Verify License</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="footer-logo">David Urrea</div>
+                    <p class="footer-text"
+                        data-en="Open to discussing new opportunities and challenges in system administration, DevOps, and infrastructure engineering."
+                        data-es="Abierto a discutir nuevas oportunidades en administración de sistemas, DevOps e ingeniería de infraestructura.">
+                        Open to discussing new opportunities and challenges in system administration, DevOps, and
+                        infrastructure engineering.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/david-a-urrea" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="mailto:davidurrea@protonmail.com"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title" data-en="Navigation" data-es="Navegación">Navigation</h6>
+                    <ul class="footer-links">
+                        <li><a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a></li>
+                        <li><a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a></li>
+                        <li><a href="#certs" data-en="Certifications" data-es="Certificaciones">Certifications</a></li>
+                        <li><a href="#education" data-en="Education" data-es="Educación">Education</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-title" data-en="Contact" data-es="Contacto">Contact</h6>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-envelope me-2" style="color:var(--accent)"></i><a
+                                href="mailto:davidurrea@protonmail.com">davidurrea@protonmail.com</a></li>
+                        <li><i class="bi bi-linkedin me-2" style="color:var(--accent)"></i><a
+                                href="https://www.linkedin.com/in/david-a-urrea"
+                                target="_blank">linkedin.com/in/david-a-urrea</a></li>
+                        <li><i class="bi bi-geo-alt me-2" style="color:var(--accent)"></i><span
+                                style="color:var(--text2)">Monterrey, México</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>© 2025 David Urrea. <span data-en="All rights reserved."
+                                data-es="Todos los derechos reservados.">All rights reserved.</span></p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p data-en="Design made by: https://github.com/zzvaje"
+                            data-es="Diseño realizado por: https://github.com/zzvaje">Design made by:
+                            https://github.com/zzvaje</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
